@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h2>Form</h2>
+
+    <form action="https://dev.fare4z.com" method="POST" enctype="multipart/form-data" name="borang">
+        <p>
+        <label for="name">Nama Peserta:</label>
+        <input type="text" id="nama" name="nama" required>
+         </p>
+
+         <p>
+        <label for="IC">Nombor Kad Pengenalan:</label>
+        <input type="text" name="katalaluan" required>
+         </p>
+
+         <p>
+            <label for="dob">Tarikh Lahir:</label>
+            <input type="date" name="dob">
+         </p>
+
+         <p>
+            <label for="gender">Jantina:</label>
+            <input type="radio" name="gender" value="Lelaki">Lelaki
+            <input type="radio" name="gender" value="Perempuan">Perempuan
+         </p>
+
+         <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+         </p>
+
+         <p>
+            <label for="phone number">Nombor Telefon:</label>
+            <input type="text" name="phone number">
+         </p>
+
+         <p>
+            <label for="alamat">Alamat Rumah</label>
+            <textarea id="message" name="alamat" rows="4" cols="30">
+            </textarea>
+         </p>
+
+         <p>
+            <label for="status">Status Pelajar:</label>
+            <select name="status" required>
+             <option value="">---Sila Pilih---</option>
+             <option value="aktif">AKTIF</option>
+             <option value="tidak aktif">TIDAK AKTIF</option>
+            </select>
+          </p>
+
+         <p>
+            <label for="kemahiran">Kemahiran:</label> <br>
+            <input type="checkbox" value="HTML" name="kemahiran[]">HTML
+            <input type="checkbox" value="CSS" name="kemahiran[]">CSS
+            <input type="checkbox" value="PHP" name="kemahiran[]">PHP
+         </p>
+
+         <p>
+            <label for="Profile Photo">Gambar Profile:</label>
+            <input type="file" name="gambarProfile">
+         </p>
+
+         <p>
+        <label for="katalaluan">Kata Laluan:</label>
+        <input type="password" name="katalaluan" required>
+         </p>
+         
+        <p>
+            <button type="submit">Hantar</button>
+            <button type="reset">Kosongkan</button>
+        </p>
+        
+
+    </form>
+
+    
+</body>
+</html>
