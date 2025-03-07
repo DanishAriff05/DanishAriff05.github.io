@@ -6,6 +6,7 @@
     <title>CSS</title>
 
     <style>
+
         h1{
             color: blueviolet;
             font-weight: 1000;
@@ -33,6 +34,7 @@
         }
 
         .content {
+            background-color: aliceblue;
             border-color: black;
             border-style: double;
             margin: 20px 15px 20px 15px;
@@ -44,9 +46,97 @@
             text-transform: uppercase;
         }
 
+        input[type="text"]
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover{
+            background-color: rgb(48, 194, 72);
+            color: #000;
+        }
+
         #left {
             text-align: left;
             text-transform: uppercase;
+        }
+
+        nav.horizontal ul {
+            list-style: none;
+            display: flex;
+            background: #333;
+            padding: 0;
+        }
+
+        nav.horizontal ul li {
+            padding: 15px 20px;
+        }
+
+        nav.horizontal ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav.horizontal ul li:hover {
+            background: #666;
+        }
+        nav.vertical {
+            margin-top: 20px;
+        }
+        
+        nav.vertical ul {
+            list-style: none;
+            background: #444;
+            padding: 0;
+            width: 200px;
+        }
+
+        nav.vertical ul li {
+            display: block;
+            padding: 15px;
+            border-bottom: 1px solid #555;
+        }
+
+        nav.vertical ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav.vertical ul li:hover {
+            background: #ffffff;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li .dropdown {
+            color: white;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #000000;
+            min-width: 150px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
         }
 
     </style>
@@ -72,6 +162,52 @@
         <li>Networking System</li>
         <li>Data Visualization</li>
     </ul>
+
+    <p>Form</p>
+
+    <table>
+        <tr>
+            <td>Name : </td>
+            <td><input type="text" placeholder="Name"> </td>
+        </tr>
+        <tr>
+            <td>Age :</td>
+            <td>
+                <input type="number" placeholder="Age">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+
+    <h1>Menu System</h1>
+
+    <nav class="horizontal">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a>
+        <ul class="dropdown">
+            <li>Web Development</li>
+            <li>Apps Development</li>
+            <li>Consultation</li>
+        </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="vertical">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     
 </div>
     Footer

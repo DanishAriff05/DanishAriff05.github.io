@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+
+    <style>
+       body {
+            background-color: bisque;
+
+        }
+
+        .content {
+            background-color: aliceblue;
+            border-color: black;
+            border-style: double;
+            margin: 20px 15px 20px 15px;
+            padding: 20px 10px 20px 10px;
+        }
+    </style>
 </head>
 <body>
 
     <h2>Form</h2>
+    
+    <div class="content">
 
     <form action="https://dev.fare4z.com" method="POST" enctype="multipart/form-data" name="borang">
         <p>
         <label for="name">Nama Peserta:</label>
+        <p>
         <input type="text" id="nama" name="nama" required>
+      </p>
          </p>
 
          <p>
