@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Web Page</title>
+</head>
+<body>
+<!--Inline JavaScript-->
+<button onclick="alert('My name is Danish!')">
+    Click Me
+</button>
+
+<br>
+
+<button onclick="register()">
+    Register Here!    
+</button>
+<!--Internal JavaScript-->
+<script>
+    alert("Hi, Welcome to JavaScript World!");
+    console.log("Test");
+
+    var a = 1;
+    var b = 2;
+    console.log("Total = " + (a+b));
+
+    function exampleScope() {
+        var a = 5; // 'a' is function-scoped
+        let b = 10; // 'b' is block-scoped
+
+    if (true) {
+        var a = 20; // This reassigns the 'a' variable declared above
+        let b = 30; // This creates a new 'b' variable with block scope
+        }
+
+    console.log(a); // Outputs 20
+    console.log(b); // Outputs 10
+    alert("a : " + a);
+    alert("b : " + b);
+    }
+
+    function register() {
+        // Ask student to enter names
+let studentName = prompt("Please enter your name");
+    studentAge = prompt("Enter your age");
+    studentPOB = prompt("Enter your Place Of Birth");
+    studentIC = prompt("Enter your NRIC");
+    studentDep = prompt("Enter your department");
+    studentAdd = prompt("Enter your address");
+
+        if (studentName) {
+            alert("Welcome to the class " + studentName + "! \n Age : " + studentAge + "\n Place Of Birth : " + studentPOB + "\n NRIC : " + studentIC + "\n Department : " + studentDep + "\n Address : " + studentAdd);
+        }
+        else{
+            alert("Please enter your name before proceed");
+        }
+        
+
+            }
+</script>
+</body>
+</html>
