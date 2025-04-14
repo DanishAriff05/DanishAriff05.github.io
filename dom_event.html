@@ -35,6 +35,35 @@
 
     </div>
 
+    <div id="event">
+
+        <h2>Event Handling</h2>
+        <!-- OnClick -->
+
+        <button onclick="alert('Button Clicked')">Click Me!</button> <br>
+
+        <button id="klik">Tekan Saya!</button> 
+
+        <p id="welcome">Welcome</p>
+
+        <img src="https://static.wikia.nocookie.net/schedule-1/images/6/63/Wong_Mugshot.png/revision/latest/thumbnail/width/360/height/450?cb=20250406110407" width="250px" id ="ming"> 
+        <br>
+        <!-- Event onfocus / onblur -->
+
+        <input type="text" id="nama" placeholder="Enter Your Name" onfocus="this.style.backgroundColor='lightgreen'" onblur="this.style.backgroundColor=''"> <br>
+        <input type="text" id="nric" placeholder="Enter Your IC Number">
+
+        <br>
+
+        <select onchange="checkJabatan()" id="jabatan">
+            <option value="">Choose one</option>
+            <option value="DDT">DDT</option>
+            <option value="DIT">DIT</option>
+        </select>
+         
+
+    </div>
+
     <script src="funtion.js"></script>
 
 </body>
