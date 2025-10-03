@@ -11,7 +11,7 @@ include_once "db_connect.php";
 
     <div class="mb-3">
         <label class="form-label">Username</label>
-        <input type="text" class"form-control" placeholder="Enter Your username" required>
+        <input type="text" class"form-control" name= "username" placeholder="Enter Your username" required>
     </div>
 
     <div class="mb-3">
@@ -30,3 +30,7 @@ include_once "db_connect.php";
     </div>
 
     <button type="submit" name="submit" class="btn btn-primary">Register</button>
+
+    <?php
+    include "footer.php";
+    ?>
